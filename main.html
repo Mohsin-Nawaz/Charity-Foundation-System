@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Shahid Afridi Foundation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width , initial-scale=1.0">
+
+	<script type="text/javascript" src="Bootstrap/jQuery/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="Bootstrap/js/vendor/popper.min.js"></script>
+	<script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="javascript.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<!-- Navbar Logo -->
+			<a href="main.html" class="navbar-brand"><img src="img/navbar_icon.png" width="50px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cnb"><span class="navbar-toggler-icon"></span></button>
+			<!-- Navbar Links -->
+			<div class="collapse navbar-collapse" id="cnb">	
+				<ul class="navbar-nav">
+					<li class="nav-item ml-2"> <!-- Dropdown menu -->
+ 						<a href="project.html" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item ml-3"> 
+						<a href="Event.html" class="nav-link">Events</a>
+					</li>
+					<li class="nav-item dropdown ml-3"> <!-- Dropdown menu -->
+						<a href="AboutUs.html" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
+						  <div class="dropdown-menu ml-2">
+					        <a class="dropdown-item" href="AboutUs.html#s1">The History</a>
+					        <a class="dropdown-item" href="AboutUs.html#s2">The Vision & Mission</a>
+					      </div> <!--End of Dropdown-menu -->
+					</li>
+					<li class="nav-item ml-3">
+						<a href="DonateUs.html" class="nav-link">Donate Us</a>
+					</li>
+					<li class="nav-item ml-3">
+						<a href="ContactUs.html" class="nav-link">Contact Us</a>
+					</li>
+				</ul> <!--End of navbar-nav -->
+				<form class="ml-auto dropdown">				
+					<input type="search" name="search" placeholder="Search.." data-toggle="dropdown" autocomplete="off" class="form-control" id="search" onkeyup="mySearch()">
+						<ul id="myMenu" class="dropdown-menu">
+					      <li class="dropdown-item"><a href="main.html">Home</a></li>
+					      <li class="dropdown-item"><a href="project.html" >Project</a></li>
+					      <li class="dropdown-item"><a href="Event.html">Event</a></li>
+					      <li class="dropdown-item"><a href="project.html#health">Health</a></li>
+					      <li class="dropdown-item"><a href="project.html#education">Education</a></li>
+					      <li class="dropdown-item"><a href="project.html#water">Water</a></li>
+					      <li class="dropdown-item"><a href="AboutUs.html#s1" >The History</a></li>
+					      <li class="dropdown-item"><a href="AboutUs.html#s2">The Vision & Mission</a></li>
+					      <li class="dropdown-item"><a href="DonateUs.html">DonateUs</a></li>
+					      <li class="dropdown-item"><a href="ContactUs.html">ContactUs</a></li>
+					    </ul>
+				</form>
+					<!-- <button class="btn btn-outline-success ml-1 my-md-1" type="submit">Search</button> -->
+			</div> <!--End of collapse , navbar-collapse -->
+		</nav>
+		<!-- 	End of Navbar -->
+
+
+
+	
+		<!-- Carousel -->
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+				<li data-target="#demo" data-slide-to="3"></li>
+			</ul>
+			<!-- carousel-inner -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/health.jpg">
+					<div class="carousel-caption">
+						<h2><span class="bg-dark text-light px-2">Health is not valued till sickness comes</span></h2>
+					</div> <!--End of Carousel-caption-->
+				</div> <!--End of Carousel-item-->
+				<div class="carousel-item ">
+					<img src="img/cleanwater.jpg">
+					<div class="carousel-caption">
+						<h2><span class="bg-dark text-light px-2">Water is life let us not waste it</span></h2>
+					</div> <!--End of Carousel-caption-->
+				</div> <!--End of Carousel-item-->
+				<div class="carousel-item ">
+					<img src="img/education.jpg">
+					<div class="carousel-caption">
+						<h2><span class="bg-dark text-light px-2">Education can change millions of lives</span></h2>
+
+					</div> <!--End of Carousel-caption-->
+				</div> <!--End of Carousel-item-->
+				<div class="carousel-item">
+					<img src="img/baner4.jpg">
+					<div class="carousel-caption">
+						<h2><span class="bg-dark text-light px-2">The Humanitarian within us cares about us</span></h2>
+					</div> <!--End of Carousel-caption-->
+				</div> <!--End of Carousel-item-->
+			</div> <!--End of Carousel-inner-->
+
+			<!--Carousel Controls -->
+			<a href="#demo" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+			<a href="#demo" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+		</div> <!--End of Carousel -->
+
+
+
+
+		<!-- Sticky Icons  -->
+		<div class="sticky-icon">
+			<ul>
+				<li class="health">
+					<div class="content">
+						<a href="project.html#health">
+							<img src="img/heartStickyIcon.png">
+							<div class="icon-text">
+								<h5>Health</h5>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="education">
+					<div class="content">
+						<a href="project.html#education">
+							<img src="img/eduStickyIcon.png">
+							<div class="icon-text">
+								<h5>Education</h5>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="water">
+					<div class="content">
+						<a href="project.html#water">
+							<img src="img/waterStickyIcon.png">
+							<div class="icon-text">
+								<h5>Clean Water</h5>
+							</div>
+						</a>
+					</div>
+				</li>
+				<li class="other">
+					<div class="content">
+						<a href="project.html#other">
+							<img src="img/otherStickyIcon.png">
+							<div class="icon-text">
+								<h5>Other Causes</h5>
+							</div>
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header> <!--  End of header -->
+
+
+
+	<main>
+		<section class="wellcome-section">
+			<div class="container"> <!--Top Wellcome-section -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content">
+							<h2>Wellcome to<br/> Shahid Afridi Foundation</h2>
+
+							<p>We are an integrated community aimed to improve the lives of the underprivileged through various efforts aimed at refining the state of Healthcare and Education within the country and providing clean and safe drinking water.</p>
+						</div> <!--End of content-->
+					</div>	<!--End of col-md-12-->
+				</div> <!--End of row-->
+			</div> <!--End of container-->
+
+			<div class="container"> <!-- Bottom Wellcome -->
+				<div class="row">	
+					<div class="col-lg-3 col-md-6 col-sm-6 welcome_box w1">
+						<div class="image-holder yellow_bg">
+							<div class="image-inner">
+								<img src="img/w1.png">
+							</div>
+						</div>
+						<a href="DonateUs.html" class="text-box green_bg">
+							<h5> Make a Donation </h5>
+							<p>Your small efforts will make a difference in the life of the people who are less fortunate than you </p>
+							<div class="plus_model yellow_bg">
+								+
+							</div>
+						</a>
+					</div> <!--End of Wellcome box-1 -->
+
+				
+					<div class="col-lg-3 col-md-6 col-sm-6 welcome_box w2">
+						<div class="image-holder pink_bg">
+							<div class="image-inner">
+								<img src="img/w2.png">
+							</div>
+						</div>
+						<a href="#modal" class="text-box blue_bg" data-toggle="modal" onclick="myFunction('Become a Volunteer')">
+							<h5> Become a Volunteer </h5>
+							<p>You not only can support us financially but also volunteer for different events to exhibit your
+								dedication to our mission</p>
+							<div class="plus_model pink_bg">
+								+
+							</div>
+						</a>
+					</div> <!--End of Wellcome box-2 -->
+
+					<div class="col-lg-3 col-md-6 col-sm-6 welcome_box w3">
+						<div class="image-holder greenl_bg">
+							<div class="image-inner">
+								<img src="img/w3.png">
+							</div>
+						</div>
+						<a href="#modal" class="text-box Purple_bg" data-toggle="modal" onclick="myFunction('Help Educate')">
+							<h5> Help Educate</h5>
+							<p>One teacher, one pen and one book can change the world</p>
+							<div class="plus_model greenl_bg">
+								+
+							</div>
+						</a>
+					</div> <!--End of Wellcome box-3 -->
+					<div class="col-lg-3 col-md-6 col-sm-6 welcome_box w4">
+						<div class="image-holder red_bg">
+							<div class="image-inner">
+								<img src="img/w4.png">
+							</div>
+						</div>
+						<a href="#modal" class="text-box orange_bg" data-toggle="modal" onclick="myFunction('Save a Life')">
+							<h5> Save a Life </h5>
+							<p>Please contribute to saving a life who is fighting diseases for long, this might be their last
+								chance</p>
+							<div class="plus_model red_bg">
+								+
+							</div>
+						</a>
+					</div> <!--End of Wellcome box-4 -->
+						<div class="modal" id="modal">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+
+							      <!-- Modal Header -->
+								     <div class="modal-header bg-primary text-light">
+								        <h4 id="modalHeader">SAF Customer Care</h4>
+								        <button type="button" class="close text-danger" data-dismiss="modal">&times;</button>
+								     </div>
+
+							      <!-- Modal body -->
+								    <div class="modal-body lightgray_bg">
+								        <form action="" id="form1">
+											<div class="form-group">
+											  <label for="name">Name:</label>
+											  <input type="text" class="form-control" id="name" required="" autocomplete="off" pattern="[A-Za-z]{3,15}" title="Name Should be between 3 to 15 character.">
+											</div>
+											<div class="form-group">
+											    <label for="num">Number:</label>
+											    <input type="text" class="form-control" id="num" required="" autocomplete="off" pattern="[1-9]{9,14}" title="Number Should be between 9 to 14 character.">
+											</div>
+											<div class="form-group">
+											    <label for="email">Email address:</label>
+									 		    <input type="email" class="form-control" id="email" autocomplete="off" required="" pattern="[A-Za-z._%+-]+[A-Za-z0-9._%+-]+@[A-Za-z.-]+\.[a-z]{2,4}">
+											</div>
+											<div class="form-inline">
+												  <select name="Gender" class="form-control">
+												  	<option>Gender</option>
+												    <option value="Student">Male</option>
+												    <option value="Employee">Female</option>
+												  </select>
+												  <select name="Profession" class="form-control ml-5">
+												  	<option >Profession</option>
+												    <option value="Student">Student</option>
+												    <option value="Employee">Employee</option>
+												    <option value="Unemployed">Unemployed</option>
+												  </select>
+											</div>
+			<!-- 								<div>
+												<label>Write your message:</label>
+												<textarea name="message" rows="4" placeholder="Write Your message" class="form-control">
+												</textarea>
+											</div> -->
+										</form>
+
+							      <!-- Modal footer -->
+									     <div class="modal-footer">
+											<div class="my-2" align="right">
+												<input type="submit" class="btn btn-primary" name="submit" form="form1">
+											</div>
+									     </div>
+
+							    </div> <!--End of Modal Content-->
+							  </div> <!--End of Modal Dialog-->
+							</div>
+							<!--End of modal -->
+				</div> <!--End of Bottom wellcome row-->
+			</div> <!--End of Bottom wellcome container-->
+		</section> <!--End of Bottom wellcome section-->
+
+
+
+
+		<section class="project-section">
+			<div class="container"> <!--Top project-section -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content">
+							<h2>Projects</h2>
+							<p>The causes we have instilled our energies and events <br/>
+								to make this community, a better community for <br/> our people and their environment</p>
+						</div> <!--End of content-->
+					</div> <!--End of col-md-12-->
+				</div> <!--End of row-->
+			</div> <!--End of container-->
+
+			<div class="container-fluid project_bottom"> <!--Bottom project-section -->
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 project">
+						<a href="project.html#health">
+							<img src="img/c1.jpg" class="img">
+							<h2>Sahibzada Fazal Rahman Charity Hospital</h2>
+							<div class="plus_model2">
+								+
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6 project">
+						<a href="project.html#health2">
+							<img src="img/c2.jpg" class="img">
+							<h2>Thar Hospital</h2>
+							<div class="plus_model2">
+								+
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6 project">
+						<a href="project.html#education">
+							<img src="img/c3.jpg" class="img">
+							<h2>SAF Schools Initiative</h2>
+							<div class="plus_model2">
+								+
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6 project">
+						<a href="project.html#water">
+							<img src="img/c4.jpg" class="img">
+							<h2>Tirah Valley: Supplying Water</h2>
+							<div class="plus_model2">
+								+
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6 project">
+						<a href="project.html#other">
+							<img src="img/c5.jpg" class="img">
+							<h2>Tirah Valley: LuminAid Lights </h2>
+							<div class="plus_model2">
+								+
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-4 col-sm-6 project">
+						<a href="project.html#other2">
+							<img src="img/c6.jpg" class="img">
+							<h2>Creating a safe haven </h2>
+							<div class="plus_model2">
+								+
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		 <section class="afridi-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 m-auto">
+						<div class="afridi">
+							<h2 class="blue_c font-weight-bold">Shahid Afridi <span class="float-right blue-c font-weight-bold">#hopenotout</span></h2>
+							<div class="afridi_img">
+								<img src="img/afridi1.jpg" class="img-fluid">
+							</div>
+							<div class="container-fluid py-3">
+								<p>Shahid Khan Afridi, Cricketer, philanthropist, extraordinaire. This man requires little introduction.
+								Former captain of the Pakistan national cricket team, well known for his amazing performance in the
+								cricket
+								field he has touched the hearts of many Pakistanis. Affectionately known nation-wide as ‘boom-boom’,
+								Shahid Afridi,
+								through his philanthropic work has shown that he is a true captain both on the cricket field and off
+								of it.</p>
+							</div>
+						</div>
+						<!-- <img src="img/afridi.png" class="img-fluid -->
+					</div>
+				</div>
+			</div>
+		 </section> 
+
+
+
+
+		 <section class="quote">
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-lg-4 col-md-6 col-sm-6 quote-hover mt-3">
+		 				<div class="quote-img" style="background: url(img/ik.jpg) no-repeat scroll left center / 100% 100%; ">
+		 					<div class="quote-text sky_bg">
+		 						<div class="quote-text-box">
+		 							<p>The hospital that SAF has built-in Kohat is for a great cause. I would
+									request all of you to help SAF with great passion. It is very motivating to see that those who have fame and respect in Pakistan are doing something for the poor and the needy and not turning a blind eye to these people.</p>
+		 						</div>
+		 						<div class="text-box-bottom">
+		 							<div class="text-box-bottom-line"></div>
+		 							<h5>Imran Khan</h5>
+		 						</div>
+		 					</div>
+		 				</div>
+		 			</div>
+		 			<div class="col-lg-4 col-md-6 col-sm-6 quote-hover mt-3">
+		 				<div class="quote-img" style="background: url(img/sw.jpg) no-repeat scroll left center /100% 100%; ">
+		 					<div class="quote-text bluel_bg">
+		 						<div class="quote-text-box">
+		 							<p>My sons say we don't wanna be a leg-spinner like you, we wanna be like Boom Boom Shahid Afridi</p>
+		 						</div>
+		 						<div class="text-box-bottom">
+		 							<div class="text-box-bottom-line"></div>
+		 							<h5>Shane Warne</h5>
+		 						</div>
+		 					</div>
+		 				</div>
+		 			</div>
+		 			<div class="col-lg-4 col-md-6 col-sm-6 quote-hover mt-3">
+		 				<div class="quote-img" style="background: url(img/bg.jpg) no-repeat scroll left center /100% 100%; ">
+		 					<div class="quote-text sky_bg">
+		 						<div class="quote-text-box">
+		 							<p>Great to have support of leading Pakistani wicket taker Shahid Afridi, who recently joined Rotary’s “This Close” campaign to support the fight to end</p>
+		 						</div>
+		 						<div class="text-box-bottom">
+		 							<div class="text-box-bottom-line"></div>
+		 							<h5>Bill Gates</h5>
+		 						</div>
+		 					</div>
+		 				</div>
+		 			</div>
+		 			<div class="col-lg-4 col-md-6 col-sm-6 quote-hover mt-3">
+		 				<div class="quote-img" style="background: url(img/st.jpg) no-repeat scroll left center /100% 100%; ">
+		 					<div class="quote-text bluel_bg">
+		 						<div class="quote-text-box">
+		 							<p>I would like to congratulate Shahid Afridi for all the good work, and I will request others to support the foundation, it is a noble cause.</p>
+		 						</div>
+		 						<div class="text-box-bottom">
+		 							<div class="text-box-bottom-line"></div>
+		 							<h5>Sachin Tendulkar</h5>
+		 						</div>
+		 					</div>
+		 				</div>
+		 			</div>
+		 			<div class="col-lg-4 col-md-6 col-sm-6 quote-hover mt-3">
+		 				<div class="quote-img" style="background: url(img/ac.jpg) no-repeat scroll left center /100% 100%; ">
+		 					<div class="quote-text sky_bg">
+		 						<div class="quote-text-box">
+		 							<p>Afridi is the firepower of Pakistan and has been of great help to humanity through his foundation</p>
+		 						</div>
+		 						<div class="text-box-bottom">
+		 							<div class="text-box-bottom-line"></div>
+		 							<h5>Alastair Cook</h5>
+		 						</div>
+		 					</div>
+		 				</div>
+		 			</div>
+		 			<div class="col-lg-4 col-md-6 col-sm-6 quote-hover mt-3">
+		 				<div class="quote-img" style="background: url(img/wa.jpg) no-repeat scroll left center /100% 100%; ">
+		 					<div class="quote-text bluel_bg">
+		 						<div class="quote-text-box">
+		 							<p>Afridi is unpredictable and I am amazed to see the success and growth of a noble humanitarian cause.</p>
+		 						</div>
+		 						<div class="text-box-bottom">
+		 							<div class="text-box-bottom-line"></div>
+		 							<h5>Wasim Akram</h5>
+		 						</div>
+		 					</div>
+		 				</div>
+		 			</div>
+		 		</div>
+		 	</div>
+		 </section> <!--End of Quote Section-->
+	</main> <!--End of Main-Body-->
+
+
+
+
+		 <footer class="blackl_bg font-small pt-4 mt-4">
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-md-4 footer-info">
+		 				<div class="footer-content">
+			 				<a href="main.html"><img src="img/navbar_icon.png" width="70px"></a>
+			 				<p class="text-light">Shahid Afridi Foundation (SAF) is committed to changing the lives of people however whatever we do would be incomplete without your love and support. The foundation works like a family, a family dedicated to providing better healthcare, education and clean drinking water to every member of society and become a ray of hope for children, youngsters and adults alike.
+			 				</p>
+		 				</div> <!--End of footer content-->
+		 			</div> <!--End of footer 1st Col-->
+		 			<div class="col-md-5">
+		 				<div class="footer-icon-text">
+		 					<h3 class="text-light">Follow Us</h3>
+		 					<div class="footer-hr-line"></div>
+		 				</div>
+		 				<div class="footer-icon mt-2"> <!--follow us icon-->
+		 					<ul class="list-unstyled list-inline">
+		 						<li class="list-inline-item mt-1 bluel_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-facebook text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1 sky_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-twitter text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1 redl_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-google-plus text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1 sky_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-linkedin text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1" style="background-color: #e95950;">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-instagram text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1" style="background-color: #cb2027;">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-pinterest text-light"></i>
+		 							</a>
+		 						</li>
+		 					</ul>
+		 				</div> <!--End of footer-icon -->
+		 			</div> <!--End of footer 2nd Col-->
+		 			<div class="col-md-3">
+		 				<div class="footer-link-text">
+		 					<h3 class="text-light">Useful Links</h3>
+		 					<div class="footer-hr-line"></div>
+		 				</div>
+		 				<div class="footer-link">
+		 					<ul class="list-unstyled text-light">
+		 						<li class="py-2 ml-2"><a href="AboutUs.html" class="text-light">About Us</a></li>
+		 						<li class="py-2 ml-2"><a href="ContactUs.html" class="text-light">Contact Us</a></li>
+		 						<li class="py-2 ml-2"><a href="#" class="text-light">Privacy policy</a></li>
+		 					</ul>
+		 				</div>
+		 			</div>
+		 		</div> <!--End of footer row-->
+		 	</div> <!--End of footer container-->
+		 </footer>
+		 	<div class="container-fluid"><!--Bottom-Footer-->
+			 	<div class="row">
+			 		<div class="text-light footer-bottom py-3 black_bg">
+					 	<p>Copyright &copy Shahid Afridi Foundation 2019 All Rights Reserved</p>
+					 </div>
+			 	</div>
+		 	</div><!--End of Bottom Footer-->
+
+
+<!-- JavaScript Code -->
+<script type="text/javascript">
+
+// 	// Wellcome Box Modal
+// 	function myFunction(modalHeader)
+// 	{
+// 		$('#modalHeader').html(modalHeader);
+// 	}
+
+// 	// Search
+// 	function mySearch() {
+//   var input, filter, ul, li, a, i;
+//   input = document.getElementById("search");
+//   filter = input.value.toUpperCase();
+//   ul = document.getElementById("myMenu");
+//   li = ul.getElementsByTagName("li");
+//   for (i = 0; i < li.length; i++) {
+//     a = li[i].getElementsByTagName("a")[0];
+//     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+//       li[i].style.display = "block";
+//     } else {
+//       li[i].style.display = "none";
+//     }
+//   }
+// }
+
+
+</script>
+</body>
+</html>

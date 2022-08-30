@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event | Shahid Afridi Foundation</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width , initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+		<!-- Navigation bar -->
+	<header>
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<!-- Navbar Logo -->
+			<a href="main.html" class="navbar-brand"><img src="img/navbar_icon.png" width="50px"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cnb"><span class="navbar-toggler-icon"></span></button>
+			<!-- Navbar Links -->
+			<div class="collapse navbar-collapse" id="cnb">	
+				<ul class="navbar-nav">
+					<li class="nav-item ml-2"> <!-- Dropdown menu -->
+ 						<a href="project.html" class="nav-link">Projects</a>
+					</li>
+					<li class="nav-item ml-3"> 
+						<a href="Event.html" class="nav-link">Events</a>
+					</li>
+					<li class="nav-item dropdown ml-3"> <!-- Dropdown menu -->
+						<a href="AboutUs.html" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
+						  <div class="dropdown-menu ml-2">
+					        <a class="dropdown-item" href="AboutUs.html#s1">The History</a>
+					        <a class="dropdown-item" href="AboutUs.html#s2">The Vision & Mission</a>
+					      </div> <!--End of Dropdown-menu -->
+					</li>
+					<li class="nav-item ml-3">
+						<a href="DonateUs.html" class="nav-link">Donate Us</a>
+					</li>
+					<li class="nav-item ml-3">
+						<a href="ContactUs.html" class="nav-link">Contact Us</a>
+					</li>
+				</ul> <!--End of navbar-nav -->
+				<form class="ml-auto dropdown">				
+					<input type="search" name="search" placeholder="Search.." data-toggle="dropdown" autocomplete="off" class="form-control" id="search" onkeyup="mySearch()">
+						<ul id="myMenu" class="dropdown-menu">
+					      <li class="dropdown-item"><a href="main.html">Home</a></li>
+					      <li class="dropdown-item"><a href="project.html" >Project</a></li>
+					      <li class="dropdown-item"><a href="Event.html">Event</a></li>
+					      <li class="dropdown-item"><a href="project.html#health">Health</a></li>
+					      <li class="dropdown-item"><a href="project.html#education">Education</a></li>
+					      <li class="dropdown-item"><a href="project.html#water">Water</a></li>
+					      <li class="dropdown-item"><a href="AboutUs.html#s1" >The History</a></li>
+					      <li class="dropdown-item"><a href="AboutUs.html#s2">The Vision & Mission</a></li>
+					      <li class="dropdown-item"><a href="DonateUs.html">DonateUs</a></li>
+					      <li class="dropdown-item"><a href="ContactUs.html">ContactUs</a></li>
+					    </ul>
+				</form>
+					<!-- <button class="btn btn-outline-success ml-1 my-md-1" type="submit">Search</button> -->
+			</div> <!--End of collapse , navbar-collapse -->
+		</nav>
+		<!-- 	End of Navbar -->
+	</header> <!--End of Header-->
+		<!-- 	End of Navbar -->
+
+
+	<!--Contact Us image-->
+	<div class="container-fluid"> 
+		<div class="row">
+			<div class="col-12 About-bg-img img-fluid" align="center">
+			</div>
+		</div>
+	</div>
+
+	<div class="col-12 my-5 cyan_c" align="center">
+		<h2>Exclusively arranged events on <br/> building
+			a better tomorrow for people
+		</h2>
+	</div>
+
+
+	<!-- Image Gallery -->
+	<div class="container-fluid event">
+		<div class="row">
+			<div class="col-lg-6 col-md-12  border py-5 px-5">
+				<h2 class="purple_c font-weight-bold">
+					SAF &#038; Muslim<br/>
+					Aid UK organised<br/>
+					fund-raising event
+				</h2>
+				<p class="py-5 event_p">SAF in collaboration with Muslim Aid UK organised star-studded fund-raising events in different cities of UK (London, Birmingham, Luton and Bradford), supporting SAF’s initiatives around education and clean water.</p>
+				<div class="event_line"></div>
+			</div> <!--End of 1st Column-->
+			<div class="col-lg-6 col-md-12 px-0 img-gallery">
+				<div class="slides">
+					<div class="slideText">1/4</div>
+					<img src="img/fr1.jpg" width="100%">
+				</div>
+				<div class="slides">
+					<div class="slideText">2/4</div>
+					<img src="img/fr2.jpg" width="100%">
+				</div>
+				<div class="slides">
+					<div class="slideText">3/4</div>
+					<img src="img/fr3.jpg" width="100%">
+				</div>
+				<div class="slides">
+					<div class="slideText">4/4</div>
+					<img src="img/fr4.jpg" width="100%">
+				</div>
+
+				<!--Next and Prev Slide btn-->
+				 <a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
+ 				 <a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
+
+ 				 <!--Thumbnail images-->
+ 				<div class="container-fluid">
+ 				 <div class="row">		
+ 				 	<div class="col-3  px-0 thumbnail">
+ 				 		<img src="img/fr1.jpg" width="100%" onclick="currentSlide(1)">
+ 				 	</div>
+ 				 	<div class="col-3  px-0 thumbnail">
+ 				 		<img src="img/fr2.jpg" width="100%" onclick="currentSlide(2)">
+ 				 	</div>
+ 				 	<div class="col-3  px-0 thumbnail">
+ 				 		<img src="img/fr3.jpg" width="100%" onclick="currentSlide(3)">
+ 				 	</div>
+ 				 	<div class="col-3  px-0 thumbnail">
+ 				 		<img src="img/fr4.jpg" width="100%" onclick="currentSlide(4)">
+ 				 	</div>
+ 				 </div>
+ 				</div>
+			</div> <!--End of 2nd Column-->
+		</div> <!--End of image gallery row-->
+	</div> <!--End of image gallery container-->
+
+	<!-- Image Gallery -->
+	<div class="container-fluid event">
+		<div class="row">
+			<div class="col-lg-6 col-md-12  border py-5 px-5">
+				<h2 class="purple_c font-weight-bold">
+					Tirah Valley Ration<br>
+					Distribution &<br>
+					Medical Camp
+				</h2>
+				<p class="py-5 event_p">SAF Project Director Mr. Iqbal Afridi distributed gifts and ration to the IDPs and locals of Tirah Valley in Ramzan 2018.</p>
+				<div class="event_line"></div>
+			</div> <!--End of 1st Column-->
+			<div class="col-lg-6 col-md-12 px-0 img-gallery">
+				<div class="slides2">
+					<div class="slideText">1/4</div>
+					<img src="img/M&D1.jpg" width="100%">
+				</div>
+				<div class="slides2">
+					<div class="slideText">2/4</div>
+					<img src="img/M&D2.jpg" width="100%">
+				</div>
+				<div class="slides2">
+					<div class="slideText">3/4</div>
+					<img src="img/M&D3.jpg" width="100%">
+				</div>
+				<div class="slides2">
+					<div class="slideText">4/4</div>
+					<img src="img/M&D5.jpg" width="100%">
+				</div>
+
+				<!--Next and Prev Slide btn-->
+				 <a class="prev" onclick="plusSlides2(-1)" style="color: white;">&#10094;</a>
+ 				 <a class="next" onclick="plusSlides2(1)" style="color: white;">&#10095;</a>
+
+ 				 <!--Thumbnail images-->
+ 				<div class="container-fluid">
+ 				 <div class="row">		
+ 				 	<div class="col-3  px-0 thumbnail2">
+ 				 		<img src="img/M&D1.jpg" width="100%" onclick="currentSlide2(1)">
+ 				 	</div>
+ 				 	<div class="col-3  px-0 thumbnail2">
+ 				 		<img src="img/M&D2.jpg" width="100%" onclick="currentSlide2(2)">
+ 				 	</div>
+ 				 	<div class="col-3  px-0 thumbnail2">
+ 				 		<img src="img/M&D3.jpg" width="100%" onclick="currentSlide2(3)">
+ 				 	</div>
+ 				 	<div class="col-3  px-0 thumbnail2">
+ 				 		<img src="img/M&D5.jpg" width="100%" onclick="currentSlide2(4)">
+ 				 	</div>
+ 				 </div>
+ 				</div>
+			</div> <!--End of 2nd Column-->
+		</div> <!--End of image gallery row-->
+	</div> <!--End of image gallery container-->
+
+<!-- Image Gallery -->
+	<div class="container-fluid event mb-5">
+		<div class="row">
+			<div class="col-lg-6 col-md-12  border py-5 px-5">
+				<h2 class="purple_c font-weight-bold">
+					Iftar camps in Ajman
+				</h2>
+				<p class="py-5 event_p">The Prophet (PBUH)said: “Whoever gives food to a fasting person with which to break his fast, will have a reward equal to his, without it detracting in the slightest from the reward of the fasting person.”</p>
+				<div class="event_line"></div>
+			</div> <!--End of 1st Column-->
+			<div class="col-lg-6 col-md-12 px-0 img-gallery">
+				<div class="slides3">
+					<div class="slideText">1/4</div>
+					<img src="img/i2.jpeg" width="100%"  height="500px">
+				</div>
+				<div class="slides3">
+					<div class="slideText">2/4</div>
+					<img src="img/i3.jpeg" width="100%" height="500px">
+				</div>
+				<div class="slides3">
+					<div class="slideText">3/4</div>
+					<img src="img/i1.jpeg" width="100%"  height="500px">
+				</div>
+
+				<!--Next and Prev Slide btn-->
+				 <a class="prev" onclick="plusSlides3(-1)" style="color: white;">&#10094;</a>
+ 				 <a class="next" onclick="plusSlides3(1)" style="color: white;">&#10095;</a>
+
+ 				 <!--Thumbnail images-->
+ 				<div class="container-fluid">
+ 				 <div class="row">		
+ 				 	<div class="col-4  px-0 thumbnail3">
+ 				 		<img src="img/i3.jpeg" width="100%" height="180px" onclick="currentSlide3(1)">
+ 				 	</div>
+ 				 	<div class="col-4  px-0 thumbnail3">
+ 				 		<img src="img/i2.jpeg" width="100%" height="180px" onclick="currentSlide3(2)">
+ 				 	</div>
+ 				 	<div class="col-4  px-0 thumbnail3">
+ 				 		<img src="img/i1.jpeg" width="100%" height="180px" onclick="currentSlide3(3)">
+ 				 	</div>
+ 				 </div>
+ 				</div>
+			</div> <!--End of 2nd Column-->
+		</div> <!--End of image gallery row-->
+	</div> <!--End of image gallery container-->
+	<footer class="blackl_bg font-small pt-4">
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-md-4 footer-info">
+		 				<div class="footer-content">
+			 				<a href="main.html"><img src="img/navbar_icon.png" width="70px"></a>
+			 				<p class="text-light">Shahid Afridi Foundation (SAF) is committed to changing the lives of people however whatever we do would be incomplete without your love and support. The foundation works like a family, a family dedicated to providing better healthcare, education and clean drinking water to every member of society and become a ray of hope for children, youngsters and adults alike.
+			 				</p>
+		 				</div> <!--End of footer content-->
+		 			</div> <!--End of footer 1st Col-->
+		 			<div class="col-md-5">
+		 				<div class="footer-icon-text">
+		 					<h3 class="text-light">Follow Us</h3>
+		 					<div class="footer-hr-line"></div>
+		 				</div>
+		 				<div class="footer-icon mt-2"> <!--follow us icon-->
+		 					<ul class="list-unstyled list-inline">
+		 						<li class="list-inline-item mt-1 bluel_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-facebook text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1 sky_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-twitter text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1 redl_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-google-plus text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1 sky_bg">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-linkedin text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1" style="background-color: #e95950;">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-instagram text-light"></i>
+		 							</a>
+		 						</li>
+		 						<li class="list-inline-item mt-1" style="background-color: #cb2027;">
+		 							<a href="#" class="mx-1">
+		 								<i class="fa fa-pinterest text-light"></i>
+		 							</a>
+		 						</li>
+		 					</ul>
+		 				</div> <!--End of footer-icon -->
+		 			</div> <!--End of footer 2nd Col-->
+		 			<div class="col-md-3">
+		 				<div class="footer-link-text">
+		 					<h3 class="text-light">Useful Links</h3>
+		 					<div class="footer-hr-line"></div>
+		 				</div>
+		 				<div class="footer-link">
+		 					<ul class="list-unstyled text-light">
+		 						<li class="py-2 ml-2"><a href="AboutUs.html" class="text-light">About Us</a></li>
+		 						<li class="py-2 ml-2"><a href="ContactUs.html" class="text-light">Contact Us</a></li>
+		 						<li class="py-2 ml-2"><a href="#" class="text-light">Privacy policy</a></li>
+		 					</ul>
+		 				</div>
+		 			</div>
+		 		</div> <!--End of footer row-->
+		 	</div> <!--End of footer container-->
+		 </footer>
+		 <div class="container-fluid"><!--Bottom-Footer-->
+			 	<div class="row">
+			 		<div class="text-light footer-bottom py-3 black_bg">
+					 	<p>Copyright &copy Shahid Afridi Foundation 2019 All Rights Reserved</p>
+					 </div>
+			 	</div>
+		 </div><!--End of Bottom Footer-->
+
+
+<!-- JavaScript Code -->
+<script type="text/javascript">
+	// image gallery 1
+	var slideIndex=1;
+	showSlide(slideIndex);
+
+
+	//Next And Prev Controls
+	function plusSlides(n) {
+		showSlide(slideIndex += n);
+	}
+
+	//thumbnail image controls
+	function currentSlide(n){
+		showSlide(slideIndex = n);
+	}
+
+	//Function to show slides
+	function showSlide(n)
+	{
+		var i , slides , thumbnail;
+		slides=document.getElementsByClassName('slides');
+		thumbnail=document.getElementsByClassName('thumbnail');
+		if(n>slides.length){slideIndex=1};
+		if(n<1){slideIndex=slides.length};
+		for(i=0;i<slides.length;i++){
+			slides[i].style.display="none";
+		}
+		for(i=0;i<thumbnail.length;i++){
+			thumbnail[i].className= thumbnail[i].className.replace("active","");
+		}
+		slides[slideIndex-1].style.display="block";
+		thumbnail[slideIndex-1].className += " active";
+	}
+
+
+
+// image gallery 2
+	showSlide2(slideIndex);
+	
+
+	//Next And Prev Controls
+	function plusSlides2(n) {
+		showSlide2(slideIndex += n);
+	}
+
+	//thumbnail image controls
+	function currentSlide2(n){
+		showSlide2(slideIndex = n);
+	}
+
+	//Function to show slides
+	function showSlide2(n)
+	{
+		var i , slides , thumbnail;
+		slides=document.getElementsByClassName('slides2');
+		thumbnail=document.getElementsByClassName('thumbnail2');
+		if(n>slides.length){slideIndex=1};
+		if(n<1){slideIndex=slides.length};
+		for(i=0;i<slides.length;i++){
+			slides[i].style.display="none";
+		}
+		for(i=0;i<thumbnail.length;i++){
+			thumbnail[i].className= thumbnail[i].className.replace("active","");
+		}
+		slides[slideIndex-1].style.display="block";
+		thumbnail[slideIndex-1].className += " active";
+	}
+
+
+	// image gallery 3
+	showSlide3(slideIndex);
+	
+
+	//Next And Prev Controls
+	function plusSlides3(n) {
+		showSlide3(slideIndex += n);
+	}
+
+	//thumbnail image controls
+	function currentSlide3(n){
+		showSlide3(slideIndex = n);
+	}
+
+	//Function to show slides
+	function showSlide3(n)
+	{
+		var i , slides , thumbnail;
+		slides=document.getElementsByClassName('slides3');
+		thumbnail=document.getElementsByClassName('thumbnail3');
+		if(n>slides.length){slideIndex=1};
+		if(n<1){slideIndex=slides.length};
+		for(i=0;i<slides.length;i++){
+			slides[i].style.display="none";
+		}
+		for(i=0;i<thumbnail.length;i++){
+			thumbnail[i].className= thumbnail[i].className.replace("active","");
+		}
+		slides[slideIndex-1].style.display="block";
+		thumbnail[slideIndex-1].className += " active";
+	}
+</script>
+</body>
+</html>
